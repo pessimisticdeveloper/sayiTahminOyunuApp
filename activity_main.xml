@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#610A14"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sonuc"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textColor="#EDEDED"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="Dinle beni !"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tahminYap" />
+
+    <Button
+        android:id="@+id/tahminYap"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:background="#78600A"
+        android:text="Tahmin Yap"
+        android:textColor="#03125A"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sayiGiriniz" />
+
+    <EditText
+        android:id="@+id/sayiGiriniz"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="#0A2907"
+        android:ems="10"
+        android:hint="Sayı Giriniz:"
+        android:inputType="textPersonName|numberDecimal"
+        android:textAlignment="center"
+        android:textColorHint="#F5F3F8"
+        android:textColor="#EDEDED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kalanHak" />
+
+    <TextView
+        android:id="@+id/kalanHak"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Kalan Hak Sayınız :"
+        android:textAlignment="center"
+        android:textColor="#F8F6FB"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="( Production place pessimisticdeveloper. )"
+        android:textAlignment="center"
+        android:textColor="#6875C1"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:layout_marginTop="550dp"
+        >
+
+    </TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
